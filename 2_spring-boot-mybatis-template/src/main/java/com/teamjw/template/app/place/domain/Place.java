@@ -1,8 +1,10 @@
 package com.teamjw.template.app.place.domain;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.apache.ibatis.type.Alias;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
@@ -13,21 +15,21 @@ import java.util.*;
  * @author teamjw - JJW
  */
 
-@Entity
-@Table(name = "trip_tbl_place")
-@Getter
-@Setter
-@ToString
-public class Place extends BaseEntity {
+@Data
+@Alias("place")
+public class Place  {
 
-	@Column(name = "place_cd", length=8, unique=true, nullable = false)
-	@NotEmpty
-	private String placeCd;
+	private Long id;
+	private String name;
+	private String country;
+	private Long population;
 
-	@Column(name = "place_korean_name", length = 255, nullable = false)
-	@NotEmpty
-	private String placeKoreanName;
+	public Place() {
+	}
 
-	@Column(name = "place_english_name", length=255)
-	private String placeEnglishName;
+	public Place(String name, String country, Long population) {
+		this.name = name;
+		this.country = country;
+		this.population = population;
+	}
 }

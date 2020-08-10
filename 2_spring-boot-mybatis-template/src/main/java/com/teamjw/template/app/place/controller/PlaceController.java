@@ -7,8 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -32,28 +30,34 @@ public class PlaceController {
     public List<Place> getPlaces() {
         return placeService.getPlaces();
     }
+/*
 
-    /**
+    */
+/**
      *  Get place by id
      * @param placeId
      * @return
-     */
+     *//*
+
     @RequestMapping(value = "/places/{id}", method = RequestMethod.GET)
     public Place getPlaceById(@PathVariable(value = "id") Long placeId) {
         return (placeService.getPlaceById(placeId)).get();
     }
 
-    /**
+    */
+/**
      *  Save place
      * @param place
      * @return
-     */
+     *//*
+
     @ResponseStatus(HttpStatus.CREATED)
     @RequestMapping(value = "/places", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public Place createPlace(@RequestBody Place place) {
         return placeService.createPlaceAll(place);
     }
 
+*/
 
 
 
