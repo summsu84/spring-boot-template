@@ -1,11 +1,13 @@
 package com.teamjw.template;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /*@ComponentScan({"com.teamjw.tripapp.common.util"})*/
 /*@SpringBootApplication()*/
 @SpringBootApplication
+@MapperScan(basePackages = "com.teamjw.template.app.**.mapper")
 public class TripappPlaceApplication {
 
 	public static void main(String[] args) {
