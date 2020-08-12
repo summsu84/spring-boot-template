@@ -11,10 +11,10 @@ public class SignUpListener {
 
     // Message Listener
     // Queue 이름을 기반으로 메시지를 받는 Listener
-    /*@RabbitListener(queues = RabbitMqEvent.MEMBER_SIGNUPED_EVENT)
+    @RabbitListener(queues = RabbitMqEvent.MEMBER_SIGNUPED_EVENT)
     public void handleSignUpEvent(final SignUpedEvent event) {
-        log.error(event.toString());
-        throw new IllegalArgumentException();
-    }*/
+        log.info(event.toString());
+        //throw new IllegalArgumentException();
+    }
 
 }
