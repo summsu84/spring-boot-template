@@ -9,17 +9,17 @@ import java.util.List;
 
 @Service("placeService")
 public class PlaceServiceImpl implements PlaceService{
-/*
+
     @Autowired
-    private PlaceMapper placeMapper;*/
+    private PlaceMapper placeMapper;
 
     /**
      *  get place list
      * @return
      */
     public List<Place> getPlaces() {
-        // return placeMapper.selectPlaceList();
-        return null;
+        return placeMapper.selectPlaceList();
+
 
     }
 

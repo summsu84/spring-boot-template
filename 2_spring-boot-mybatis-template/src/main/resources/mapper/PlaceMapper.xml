@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- Mapper와 위치를 동일하게 해야함 -->
+<mapper namespace="com.teamjw.template.app.place.mapper.PlaceMapper">
+
+    <resultMap id="PlaceResultMap"
+               type="com.teamjw.template.app.place.domain.Place">
+        <id property="id" column="ID"/>
+        <result property="name" column="NAME"/>
+        <result property="country" column="COUNTRY"/>
+        <result property="population" column="POPULATION"/>
+
+    </resultMap>
+
+	<select id="selectPlaceList" resultMap="PlaceResultMap">
+        SELECT ID
+              ,NAME
+              ,COUNTRY
+              ,POPULATION
+          FROM PLACE
+    </select>
+
+
+</mapper>
