@@ -1,0 +1,27 @@
+
+spring:
+  datasource:
+    username: sa
+    password:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+#    hikari:
+#      jdbc-url: jdbc:h2:~/test
+#    initialization-mode: always
+  ## JPA Configuration
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties.hibernate:
+      hbm2ddl.auto: update
+      format_sql: true
+    showSql: true
+    generate-ddl: true
+  h2:
+    console:
+      enabled: true
+  jwt:
+    secret: test
+
+
+server:
+  port: 8080
