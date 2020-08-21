@@ -1,7 +1,7 @@
 package com.teamjw.template.security.interfaces.controller;
 
-import com.github.sandokandias.payments.infrastructure.util.i18n.I18nMessage;
-import com.github.sandokandias.payments.interfaces.rest.model.ErrorResponse;
+import com.teamjw.template.security.infrastructure.config.util.i18n.I18nMessage;
+import com.teamjw.template.security.interfaces.model.ErrorResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.MessageSource;

@@ -1,15 +1,15 @@
 package com.teamjw.template.security.interfaces.controller;
 
+import com.teamjw.template.security.application.service.ResponseService;
+import com.teamjw.template.security.domain.vo.User;
 import com.teamjw.template.security.exception.CUserNotFoundException;
 import com.teamjw.template.security.interfaces.model.ListResult;
 import com.teamjw.template.security.interfaces.model.SingleResult;
 import com.teamjw.template.security.repo.UserJpaRepo;
-import com.teamjw.template.security.application.service.ResponseService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
-import com.teamjw.template.security.domain.User;
 
 @RequiredArgsConstructor
 @RestController

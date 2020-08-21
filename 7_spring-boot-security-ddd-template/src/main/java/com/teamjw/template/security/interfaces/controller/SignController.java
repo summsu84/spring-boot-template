@@ -1,8 +1,8 @@
 package com.teamjw.template.security.interfaces.controller;
 
 
+import com.teamjw.template.security.domain.vo.User;
 import com.teamjw.template.security.infrastructure.config.security.JwtTokenProvider;
-import com.teamjw.template.security.domain.User;
 import com.teamjw.template.security.exception.CEmailSigninFailedException;
 import com.teamjw.template.security.interfaces.model.CommonResult;
 import com.teamjw.template.security.interfaces.model.SingleResult;
