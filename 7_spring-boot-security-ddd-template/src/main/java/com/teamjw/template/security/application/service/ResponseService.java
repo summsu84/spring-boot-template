@@ -1,8 +1,8 @@
-package com.teamjw.template.security.service;
+package com.teamjw.template.security.application.service;
 
-import com.teamjw.template.security.interfaces.controller.CommonResult;
-import com.teamjw.template.security.interfaces.controller.ListResult;
-import com.teamjw.template.security.interfaces.controller.SingleResult;
+import com.teamjw.template.security.interfaces.model.CommonResult;
+import com.teamjw.template.security.interfaces.model.ListResult;
+import com.teamjw.template.security.interfaces.model.SingleResult;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

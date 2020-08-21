@@ -1,4 +1,4 @@
-package com.teamjw.template.security.common;
+package com.teamjw.template.security.infrastructure.common;
 
 public class CacheKey {
 

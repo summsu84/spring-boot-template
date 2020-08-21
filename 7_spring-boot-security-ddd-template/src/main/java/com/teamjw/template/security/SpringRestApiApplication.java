@@ -1,6 +1,6 @@
 package com.teamjw.template.security;
 
-import com.teamjw.template.security.infrastructure.GracefulShutdown;
+import com.teamjw.template.security.infrastructure.config.util.GracefulShutdown;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
