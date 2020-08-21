@@ -29,8 +29,6 @@ Spring Security DDD API
 - application
 
 
-
-
 참고
 - https://daddyprogrammer.org/post/636/springboot2-springsecurity-authentication-authorization/
 - https://kuleeblog.wordpress.com/2017/01/19/java-spring-ddd-domain-driven-design-%EC%84%A4%EA%B3%84-%EB%B0%A9%EB%B2%95%EB%A1%A0-2-project-packaging/
