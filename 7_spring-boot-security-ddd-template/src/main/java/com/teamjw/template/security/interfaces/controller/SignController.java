@@ -23,7 +23,6 @@ public class SignController {
     private final JwtTokenProvider jwtTokenProvider;
     private final ResponseService responseService;
     private final PasswordEncoder passwordEncoder;
-
     // login
     @PostMapping(value = "/signin")
     public SingleResult<String> signin(@RequestParam String id,
