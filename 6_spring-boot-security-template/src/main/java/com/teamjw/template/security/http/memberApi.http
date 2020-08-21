@@ -4,22 +4,19 @@
 # * 'gtrp' and 'gtr' create a GET request with or without query parameters;
 # * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
-POST http://localhost:8080/members
-Content-Type: application/json
+POST http://localhost:8080/v1/signin
+#Content-Type: application/json
+Content-Type: application/x-www-form-urlencoded
 
-{
-  "name": "asdasd",
-  "email": "asdasd@asdsad.com"
-}
+id="asdasd@asdsad.com"&password="1234"
 
 ###
 POST http://localhost:8080/v1/signup
-Content-Type: application/json
+Content-Type: application/x-www-form-urlencoded
 
-{
-  "id": "asdasd@asdsad.com",
-  "password": "1234",
-  "name": "asdasd"
-}
+id="asdasd@asdsad.com"&password="1234"&name="asdasd"
 
+###
+GET http://localhost:8080/v1/users
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTU5Nzk4OTc4OCwiZXhwIjoxNTk4MDc2MTg4fQ.5A1swDmG0D7dQ1-HuE2_I0Viig9yvX8QqNwmnULoEaI
 ###
